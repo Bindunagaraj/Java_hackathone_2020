@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/*       
+bin/*
+hs_err_pid16120.log
+hs_err_pid17584.log
+hs_err_pid5040.log
+hs_err_pid6740.log
+hs_err_pid8084.log
+        
