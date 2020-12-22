@@ -22,13 +22,13 @@ public class Question31 {
     BufferedWriter bwr=new BufferedWriter(fwr);
     String str3=null;
     String[] str=new String[10];
-    int i=0;  
+    int i=9;  
     while((str3=bor.readLine())!=null)
     {      
     	str[i]=str3;
-    	i++;
+    	i--;
     }
-    for(int j=10;j>0;j--)
+    for(int j=0;j<10;j++)
     {
     	bwr.write(str[j]);
     	bwr.newLine();

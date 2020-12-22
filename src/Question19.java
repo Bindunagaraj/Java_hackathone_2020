@@ -4,25 +4,33 @@ import java.util.Scanner;
 public class Question19 {
 //Q19. WJP to display number of occurrence of all character
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
+		Scanner sc= new Scanner(System.in);
 		System.out.println("Enter a String");
-		String str = sc.nextLine();
-		char[] c = str.toCharArray();
-		for (int i = 0; i < c.length; i++) {
-			int count = 1;
-			int a = c.length + 1;
-			for (int j = i + 1; j < c.length; j++) {
-				if (c[i] == c[j]) {
+		String str=sc.nextLine().toLowerCase();
+		int l=str.length();
+		int[] n=new int[l];
+		int count=0;
+		char hi=' ';
+		int a=0;
+		int[] c=new int[l];
+		char[] ch=str.toCharArray();
+		int[] save=new int[l];
+		for(int i=0;i<l;i++)
+		{   count=1;  
+			for(int j=i+1;j<l;j++)
+			{
+				if(ch[i]==ch[j])
+					{
 					count++;
-					a = j;
-					c[a] = ' ';
-				} else
-					continue;
+					a=j;
+					ch[a]=' ';
+					}
+				
+			
 			}
-			if (count >= 1 && c[i] != ' ')
-				System.out.println("number of occurance of character " + c[i] + " is " + count);
-			else
-				continue;
-		}
+			if(ch[i]!=' ')
+ System.out.println("character "+ch[i]+" occurs "+count+" times");
+			}
+		
 	}
 }

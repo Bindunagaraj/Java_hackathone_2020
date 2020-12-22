@@ -1,6 +1,6 @@
-
+//Q10. What is String subsequence method?
 public class Question10 {
-//Q10. What is String subsequence method? 
+ 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 String str="Hello ll sir";

@@ -18,10 +18,6 @@ public class Question16 {
 
 		System.out.println("New String is " + s);
 
-//for(int i=0;i<str.length();i++)
-//{
-//System.out.print(s[i]);
-		// }
 
 	}
 
